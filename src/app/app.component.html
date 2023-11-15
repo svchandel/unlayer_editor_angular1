@@ -1,0 +1,9 @@
+<div class="container">
+  <button (click)="exportHtml()">Export</button>
+  <email-editor
+    (loaded)="editorLoaded($event)"
+    [projectId]=""
+    [options]="options()"
+    [appearance]="appearance()"
+  ></email-editor>
+</div>
